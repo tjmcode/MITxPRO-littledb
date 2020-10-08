@@ -10,6 +10,12 @@
         <div id="status"></div>        
         <button type="button" class="btn btn-primary" onclick="data()">Show All Data</button><br>
 
+        <!-- YOUR CODE -->
+        <input type="input" id="addId" placeholder="id">
+        <input type="input" id="addTitle" placeholder="title">
+        <input type="input" id="addPublished" placeholder="published">
+        <button type="button" class="btn btn-info" onclick="add()">Add Record</button>
+
     </main>
 
 </body>
@@ -21,13 +27,39 @@ function data() {
 
     superagent
         .get(url)
-        .end(
-            // ---------------------------------
-            //      YOUR CODE
-            // ---------------------------------
-        );
+        .end(function(err, res){
+            if(err){
+                console.log(err);
+            }
+            else{
+                console.log(res);
+            }
+
+        });
 }
 
+function add() {
+    var status  = document.getElementById('status');
+    var id = document.getElementById('addId').value;
+    var title = document.getElementById('addTitle').value;
+    var published = document.getElementById('addPublished').value;
+    var url = '/posts/' + title + '/' + id + '/' + published;
+
+
+    superagent
+        .get(url)
+        .end(function(err, res){
+            if(err){
+                console.log(err);
+            }
+            else{
+                console.log(res);
+                status.innerHTML = JSON.stringify(res.body);
+            }
+
+        });
+
+}
 
 </script>
 </html>

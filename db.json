@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    },
+    {
+      "id": 2,
+      "title": "great"
+    },
+    {
+      "id": 3,
+      "title": "test"
+    },
+    {
+      "id": 4,
+      "title": "new"
+    },
+    {
+      "id": 5,
+      "title": "again"
+    },
+    {
+      "id": 6,
+      "title": "cool"
+    },
+    {
+      "id": 7,
+      "title": "cool"
+    },
+    {
+      "id": "8",
+      "title": "ping",
+      "published": "false"
+    },
+    {
+      "id": "9",
+      "title": "abel",
+      "published": "true"
+    },
+    {
+      "id": "10",
+      "title": "kenny",
+      "published": "true"
+    },
+    {
+      "id": "11",
+      "title": "cambridge",
+      "published": "true"
+    },
+    {
+      "id": "15",
+      "title": "this is it",
+      "published": "true"
+    },
+    {
+      "id": "1",
+      "title": "ping",
+      "published": "false"
+    },
+    {
+      "id": "1",
+      "title": "ping",
+      "published": "false"
+    }
+  ]
+}
