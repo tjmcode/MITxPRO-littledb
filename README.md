@@ -1,2 +1,2 @@
-# littledb
-Little DB Exercises
+# MITxPRO-littledb
+Little DB Exercises for teh MITxPRO Course
